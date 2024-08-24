@@ -8,7 +8,7 @@ for i in numeros:
         print(i)
 '''
         
-ciudades = ["Bosconia", "Curumani", "Becerril", "Pailitas", "Aguachica", "La Paz"]
+ciudades = ["Bosconia", "Curumani", "Becerril", "Pailitas", "Aguachica", "La Paz", "El Copey"]
 print(ciudades)
 
 for ciudad in ciudades:
