@@ -10,5 +10,9 @@ for i in range(1,6):
     print("Hola Mundo")
 """
 
-for i in range(2,21,2):
-    print(i)
+numeros = [1,5,3,5,3,6]
+suma_total = 0
+
+for numero in numeros:
+    suma_total += numero
+print(f"La suma de los numeros es: {suma_total}")
