@@ -46,3 +46,9 @@ print(f"El promedio de la columna 'Age' es: {promedio_edad}")"""
 num_sobrevivientes = tita['Survived'].value_counts()[1]
 print(f"Hay {num_sobrevivientes} sobrevivientes del Titanic")"""
 
+#reemplazar nulos por "sin registro"
+tita['Embarked'].fillna('Sin registro', inplace=True)
+print(tita)
+
+tita.to_csv('titanic_embarked.csv', index=False)
+
