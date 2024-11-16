@@ -47,9 +47,13 @@ plt.show()'''
 
 datos_maraton = datos_maraton.query('sp4week<1000')
 
-plt.scatter(x = datos_maraton['sp4week'], y=datos_maraton['MarathonTime'])
+'''plt.scatter(x = datos_maraton['sp4week'], y=datos_maraton['MarathonTime'])
 plt.title('sp4week vs Marathon Time')
 plt.xlabel('sp4week')
 plt.ylabel('Marathon Time')
-plt.show()
+plt.show()'''
 
+datos_entrenamiento = datos_maraton.sample(frac=0.8,random_state=0)
+datos_test = datos_maraton.drop(datos_entrenamiento.index)
+
+print(datos_entrenamiento)
